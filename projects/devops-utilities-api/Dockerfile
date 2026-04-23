@@ -1,17 +1,19 @@
-# Take Pateela
+# take Pateela
 
 FROM python:3.14
 
-# Add ingredients
+# Add Ingrients
 
 WORKDIR /app
 
 COPY . .
-# mix / process the items
+
+# Mix /Process the items 
 
 RUN pip install -r requirements.txt
 
 EXPOSE 8000
 # Gas on
 
-CMD ["python","main.py"]
+CMD ["python", "main.py"]
+
